@@ -29,7 +29,7 @@ async def inform(message):
     await message.answer("Информация о боте!")
 
 
-@dp.message_handler(text = ["Рассчитать"])
+@dp.message_handler(text = "Рассчитать")
 async def set_age(message):
     await message.answer("Введите свой возраст.")
     await UserState.age.set()
